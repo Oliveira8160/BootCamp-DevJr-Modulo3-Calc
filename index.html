@@ -11,10 +11,15 @@
     <div class="container">
         <div class="calc">
             <h1>Calculadora</h1>
-            <input type="number" id="number1">
-            <input type="number" id="number2">
-            <button onclick="calc()">soma</button>
-            <input readonly type="text" id="result">
+            <input id="number1" type="number">
+            <input id="number2" type="number">
+            <div>
+                <button onclick="calc('+')">+</button>
+                <button onclick="calc('-')">-</button>
+                <button onclick="calc('*')">*</button>
+                <button onclick="calc('/')">/</button>
+            </div>
+            <input readonly id="result" type="text">
         </div>
         <div class="history">
 
